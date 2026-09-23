@@ -1,6 +1,5 @@
 import { OrderDetails } from "@/types/tracking.type";
 
-
 export const mockOrders: Record<string, OrderDetails> = {
   // Scenario: Standard Active Order (Out for Delivery)
   "ORD-90211": {
@@ -9,7 +8,8 @@ export const mockOrders: Record<string, OrderDetails> = {
     scenario: "standard",
     status: "out_for_delivery",
     statusLabel: "Out for Delivery",
-    statusDescription: "Your driver is nearby and arriving before 4:00 PM today.",
+    statusDescription:
+      "Your driver is nearby and arriving before 4:00 PM today.",
     placedAt: "2026-09-20T10:15:00Z",
     estimatedDelivery: "2026-09-23T16:00:00Z",
     actualDelivery: null,
@@ -274,7 +274,8 @@ export const mockOrders: Record<string, OrderDetails> = {
       {
         id: "step-4",
         title: "Missing Package Claim Submitted",
-        description: "Customer reported non-receipt. Driver GPS check in progress.",
+        description:
+          "Customer reported non-receipt. Driver GPS check in progress.",
         location: "Customer Care Operations",
         timestamp: "2026-09-22T16:05:00Z",
         status: "alert",
