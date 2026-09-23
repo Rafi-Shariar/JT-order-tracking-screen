@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-
+import { Button } from "@/components/ui/button";
 import {
   AlertCircle,
   Calendar,
@@ -87,7 +87,7 @@ export function TrackingBanner({ order }: TrackingBannerProps) {
             <span>{order.courier.name}</span>
           </div>
 
-          <button
+          <Button
             onClick={handleCopy}
             className="inline-flex items-center gap-1.5 rounded-full border border-black/5 bg-background/60 px-3 py-1 font-mono text-xs font-medium text-foreground backdrop-blur-xs transition hover:bg-background"
           >
@@ -98,7 +98,7 @@ export function TrackingBanner({ order }: TrackingBannerProps) {
                 Copied
               </span>
             )}
-          </button>
+          </Button>
         </div>
 
         {/* Status Message */}
